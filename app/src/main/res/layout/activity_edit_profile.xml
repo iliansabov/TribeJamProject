@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.EditProfileActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageViewCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/walpaperjam"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        app:layout_collapseMode="parallax"
+        android:transitionName="@string/transitionname_picture"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_person"
+        app:civ_circle_background_color="@color/purple_200"
+        android:layout_marginTop="130dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_person_" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name "
+                android:inputType="text"
+                android:theme="@style/EditTextPurple" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_phone_dark" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number "
+                android:inputType="numberSigned"
+                android:theme="@style/EditTextPurple" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_botton"
+        android:backgroundTint="@color/purple_700"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularBackImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

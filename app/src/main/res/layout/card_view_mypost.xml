@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#FFCEAFF3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageMyPost"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/walpaperjam"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewTitleMyPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo de la publicacion"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewRelativeTimeMyPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hace 0 minutos"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="3dp"/> 
+
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/imageViewDeleteMyPost"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete"/>
+
+    </LinearLayout>
+
+</FrameLayout>

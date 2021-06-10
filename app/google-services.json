@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "526871968723",
+    "project_id": "tribejam-9dd21",
+    "storage_bucket": "tribejam-9dd21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526871968723:android:ad609dbf09514b77f04d26",
+        "android_client_info": {
+          "package_name": "com.optic.tribejam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526871968723-1g4kk8qegb7n1skp8vd5t2u2puo5mc6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.optic.tribejam",
+            "certificate_hash": "cc77df210e53b1cc468657dd01977840cf055276"
+          }
+        },
+        {
+          "client_id": "526871968723-m32v2me6fbf0lj47pa9ovieekl2u8915.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0HTP4E0RmZxOJOlqSoJARlT1UHVQeOjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526871968723-m32v2me6fbf0lj47pa9ovieekl2u8915.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
